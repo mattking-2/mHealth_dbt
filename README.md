@@ -19,7 +19,7 @@ This repo demonstrates a simple dbt project on mobile health (mHealth) app data,
   - `mHealth_Sample_Jup.ipynb` – generates random sample datasets for testing or portfolio demonstrations.
  
 ### Tech Stack
-dbt – Data modeling and transformation
-BigQuery – Cloud data warehouse
-Python – Data sampling & reproducible dataset generation
-VS Code - Code editor
+- dbt: Data modeling and transformation
+- BigQuery: Cloud data warehouse
+- Python: Data sampling & reproducible dataset generation
+- VS Code: Code editor
