@@ -1,4 +1,4 @@
-### mHealth dbt Project
+## mHealth dbt Project
 
 This repo demonstrates a simple dbt project on mobile health (mHealth) app data, and includes
 - SQL models and semantic layer creation with dbt
@@ -6,7 +6,7 @@ This repo demonstrates a simple dbt project on mobile health (mHealth) app data,
 - Python notebook that generates random samples (to make the dataset smaller for playing with it in BigQuery)
 
 
-## Key Features
+### Key Features
 
 - **dbt Models**  
   - `user_event_desc` – joins API request logs (`mHealth_req`) with human-readable endpoint descriptions.
@@ -17,7 +17,7 @@ This repo demonstrates a simple dbt project on mobile health (mHealth) app data,
 - **Python Notebook**  
   - `mHealth_Sample_Jup.ipynb` – generates random sample datasets for testing or portfolio demonstrations.
  
-# Tech Stack
+### Tech Stack
 dbt – Data modeling and transformation
 BigQuery – Cloud data warehouse
 Python – Data sampling & reproducible dataset generation
