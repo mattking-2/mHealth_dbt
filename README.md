@@ -1,15 +1,24 @@
-Welcome to your new dbt project!
+### mHealth dbt Project
 
-### Using the starter project
+This repo demonstrates a simple dbt project on mobile health (mHealth) app data, and includes
+- SQL models and semantic layer creation with dbt
+- Seed data for endpoint (app activity) descriptions that were provided in a PDF with the original dataset
+- Python notebook that generates random samples (to make the dataset smaller for playing with it in BigQuery)
 
-Try running the following commands:
-- dbt run
-- dbt test
 
+## Key Features
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- **dbt Models**  
+  - `user_event_desc` – joins API request logs (`mHealth_req`) with human-readable endpoint descriptions.
+ 
+- **Seeds**  
+  - `endpoint_descriptions.csv` – maps HTTP methods and endpoints to human-readable descriptions for easier analysis.
+
+- **Python Notebook**  
+  - `mHealth_Sample_Jup.ipynb` – generates random sample datasets for testing or portfolio demonstrations.
+ 
+# Tech Stack
+dbt – Data modeling and transformation
+BigQuery – Cloud data warehouse
+Python – Data sampling & reproducible dataset generation
+VS Code - Code editor
