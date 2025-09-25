@@ -1,0 +1,14 @@
+name: 'posh_portfolio'
+version: '1.0.0'
+profile: 'posh_portfolio'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  posh_portfolio:
+    +materialized: table
+
+seeds:
+  posh_portfolio:
+    +quote_columns: false

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: mhealth_analytics
+    database: mhealth-analytics-473021
+    schema: mhealth_analytics
+    tables:
+      - name: mHealth_req
+      - name: endpoint_descriptions

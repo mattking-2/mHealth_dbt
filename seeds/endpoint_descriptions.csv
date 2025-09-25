@@ -1,0 +1,39 @@
+method,endpoint,description
+POST,/activities,Create a new activity
+GET,/activities/{aid},Read a specific activity with ID {aid}
+DELETE,/activities/{aid},Delete a specific activity with ID {aid}
+GET,/activities/{aid}/chats,Read all comments on a particular activity with ID {aid}
+POST,/activities/{aid}/messages,Create a new comment on a particular activity with ID {aid}
+PUT,/activities/{aid}/supports,Update (= create or remove) a support on a particular activity with ID {aid}
+GET,/activityschemes,Read all activity schemes (potentially subject to selection criteria)
+GET,/activityschemes/{scheme},Get a particular activity scheme with ID {scheme}
+GET,/challenges,Read all challenges
+POST,/challenges,Create a new challenge
+GET,/challenges/{xid},Read a specific challenge with ID {xid}
+PUT,/challenges/{xid},Update a specific challenge with ID {xid}
+POST,/challenges/{xid}/participants,Create a new participation with certain circles to a specific challenge with ID {xid}
+DELETE,/challenges/{xid}/player/{pid}/participants,Remove a participation from a specific challenge with ID {xid} for a specific player with ID {pid}
+GET,/challenges/{xid}/leaderboard/{cid},Read a leaderboard of a specific circle with ID {cid} for a specific challenge with ID {xid}
+GET,/challenges/{xid}/rules/{rid},Read a specific rule with ID {rid} from a specific challenge with ID {xid}
+POST,/challenge/lottery/{lid},Engage in a specific lottery with ID {lid}
+GET,/circles,Read all circles
+POST,/circles,Create a new circle
+GET,/circles/{cid},Read a specific circle with ID {cid}
+PUT,/circles/{cid},Update a specific circle with ID {cid}
+POST,/circles/{cid}/memberships,Create a new membership request for particular player(s) to a specific circle with ID {cid}
+GET,/circles/{cid}/messages,Read all chat messages from a particular circle with ID {cid}
+POST,/circles/{cid}/messages,Create a new chat message in a particular circle with ID {cid}
+GET,/data-providers,Read all data providers (potentially subject to selection criteria)
+GET,/gis/data-providers,Read all data providers (potentially subject to selection criteria)
+POST,/gis/locations,Create a new location log
+GET,/legal-conditions,Read the terms and conditions
+PUT,/legal-conditions,Update the terms and conditions
+PUT,/memberships/{mid},Update a specific circle membership with ID {mid}
+DELETE,/memberships/{mid},Remove a specific circle membership with ID {mid}
+PUT,/notifications,Update notifications
+GET,/player-roles,Read all the roles that a specific player with ID {pid} is assigned
+GET,/players/{pid},Read general information of a specific player with ID {pid}
+GET,/players/{pid}/achievements,Read the achievements of a specific player with ID {pid}
+GET,/players/{pid}/activities,Read all the activities of a particular player with ID {pid} (potentially subject to selection criteria)
+GET,/players/{pid}/challenges,Read all the challenges of a particular player with ID {pid} (potentially subject to selection criteria)
+GET,/players/{pid}/chats,Read all the chat messages of a particular player with ID {pid}

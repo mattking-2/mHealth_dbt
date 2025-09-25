@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: user_event_summary
+    description: "Aggregated API requests with endpoint descriptions"
+    columns:
+      - name: user
+        tests:
+          - not_null
+      - name: total_requests
+        tests:
+          - not_null
+          - relationships:
+              to: user_event_desc.user
