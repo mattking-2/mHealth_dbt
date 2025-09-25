@@ -10,7 +10,8 @@ This repo demonstrates a simple dbt project on mobile health (mHealth) app data,
 
 - **dbt Models**  
   - `user_event_desc` – joins API request logs (`mHealth_req`) with human-readable endpoint descriptions.
- 
+  - `user_event_summary` – aggregates activity by user
+
 - **Seeds**  
   - `endpoint_descriptions.csv` – maps HTTP methods and endpoints to human-readable descriptions for easier analysis.
 
